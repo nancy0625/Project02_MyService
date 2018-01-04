@@ -4,6 +4,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
+import android.util.Log;
 
 import cn.edu.gdmec.android.project02_myservice.httppost.HttpUtils;
 
@@ -13,6 +14,7 @@ import cn.edu.gdmec.android.project02_myservice.httppost.HttpUtils;
 
 public class MyService extends Service {
     private HttpUtils httpThread,httpThread2;
+    private String res1,res2;
     public MyService(){
 
     }
@@ -24,26 +26,8 @@ public class MyService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        new Thread(){
-            @Override
-            public void run() {
-                while (!Thread.currentThread().isInterrupted()){
-                    httpThread = new HttpUtils();
-                    httpThread2 = new HttpUtils();
-                    String json2 = "{\"RoadId\":1,\"UserName\":\"user1\"}";
-                    httpThread2.sendPost("http://192.168.1.231:8080/TrafficServer/action/GetRoadStatus.do",json2);
-                    String json = "{\"UserName\":" + "\"user1\"" + "}";
-                    httpThread.sendPost("http://192.168.1.231:8080/TrafficServer/action/GetAllSense.do",json);
-                    try {
-                        Thread.sleep(5000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
+       new Project02Activity().sart();
 
-
-            }
-        }.start();
         return super.onStartCommand(intent, flags, startId);
     }
 }

@@ -15,8 +15,11 @@ import java.nio.file.Path;
  */
 
 public class HttpUtils {
+
     public String sendPost(String url,String json){
+
         ByteArrayOutputStream bao = new ByteArrayOutputStream();
+
 
         try {
             HttpURLConnection httpURLConnection = (HttpURLConnection)new URL(url).openConnection();
@@ -45,6 +48,7 @@ public class HttpUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
         return new String(bao.toByteArray());
     }

@@ -30,7 +30,7 @@
                 android:gravity="center"
                 android:onClick="c_tv1"
                 android:clickable="true"
-               android:background="@drawable/yellow"
+               android:background="@drawable/white"
                android:layout_marginRight="20dp"
                 android:layout_alignParentBottom="true"
                 android:layout_toRightOf="@+id/tv1" />
@@ -84,7 +84,7 @@
                 android:gravity="center"
                 android:onClick="c_tv3"
                 android:clickable="true"
-                android:background="@drawable/blue"
+                android:background="@drawable/white"
                 android:layout_marginRight="20dp"
                 android:layout_alignParentBottom="true"
                 android:layout_toRightOf="@+id/tv3" />
@@ -112,7 +112,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="空气温度" />
+                android:text="CO2" />
 
             <TextView
                 android:id="@+id/tv_04"
@@ -121,7 +121,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginRight="20dp"
                 android:layout_toRightOf="@+id/tv4"
-                android:background="@drawable/red"
+                android:background="@drawable/white"
                 android:clickable="true"
                 android:gravity="center"
                 android:onClick="c_tv1"
@@ -140,7 +140,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="空气温度" />
+                android:text="PM2.5" />
 
             <TextView
                 android:id="@+id/tv_05"
@@ -149,7 +149,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginRight="20dp"
                 android:layout_toRightOf="@+id/tv5"
-                android:background="@drawable/red"
+                android:background="@drawable/white"
                 android:clickable="true"
                 android:gravity="center"
                 android:onClick="c_tv5"
@@ -168,7 +168,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="空气温度" />
+                android:text="道路状态" />
 
             <TextView
                 android:id="@+id/tv_06"
@@ -177,7 +177,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginRight="20dp"
                 android:layout_toRightOf="@+id/tv6"
-                android:background="@drawable/red"
+                android:background="@drawable/white"
                 android:clickable="true"
                 android:gravity="center"
                 android:onClick="c_tv6"
