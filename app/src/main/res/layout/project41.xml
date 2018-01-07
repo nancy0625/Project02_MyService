@@ -1,94 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
 
     <RelativeLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:gravity="center"
-        android:layout_gravity="center">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="250dp"
-            android:text="登录"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-
-            android:id="@+id/textView41"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/setting" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textView41"
-            android:layout_alignParentRight="true"
-            android:text="语言" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_weight="1"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="64dp">
+        android:layout_weight="0.31"
+        android:gravity="center">
+
         <EditText
             android:id="@+id/user_41"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:hint="请输入用户名"/>
+            android:hint="请输入用户名"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
         <EditText
-           android:layout_below="@+id/user_41"
             android:id="@+id/psw_41"
-            android:gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="64dp"
-            android:hint="请输入密码"/>
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:layout_below="@+id/user_41"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp" />
 
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="32dp"
-        android:layout_weight="1.09"
         android:layout_gravity="center"
+        android:layout_weight="0.13"
         android:gravity="center">
+
         <TextView
-            android:onClick="register"
-            android:clickable="true"
             android:id="@+id/register_cb41"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="注册新账号"/>
-        <TextView
-            android:onClick="password"
             android:clickable="true"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/register_cb41"
+            android:onClick="register"
+            android:text="注册新账号" />
+
+        <TextView
             android:id="@+id/psw_cb41"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="找回密码"/>
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/register_cb41"
+            android:clickable="true"
+            android:onClick="password"
+            android:text="找回密码"
+            android:layout_alignTop="@+id/register_cb41" />
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_weight="1.09"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+
         android:gravity="center">
-      <Button
-          android:id="@+id/submit"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="登录"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录" />
     </RelativeLayout>
 
 </LinearLayout>
