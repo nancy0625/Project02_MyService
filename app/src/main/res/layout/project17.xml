@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tv1_p17"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/add2"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="152dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前空闲车位查询"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv1_p17" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.13">
+
+        <Button
+            android:id="@+id/btn_p17"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/t1_p17"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="38dp"
+            android:layout_toLeftOf="@+id/t1_p17"
+            android:background="@color/light_blue"
+            android:text="查询" />
+
+        <TextView
+            android:id="@+id/t1_p17"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="55dp"
+            android:layout_toLeftOf="@+id/t2_p17"
+          />
+
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/t1_p17"
+            android:layout_below="@+id/t1_p17"
+            android:text="一号车位"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t2_p17"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="103dp"
+            />
+
+        <TextView
+            android:id="@+id/tt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/t2_p17"
+            android:layout_below="@+id/t2_p17"
+            android:text="二号车位"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
